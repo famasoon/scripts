@@ -1,6 +1,9 @@
 import urllib.request
 import json
 import sys
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 # arg e.g. https://tor2web.io/ https://onion.to
 
